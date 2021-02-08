@@ -1,0 +1,10 @@
+<p>
+  Post List for User {{ userId$ | async }}
+</p>
+
+<mat-list>
+  <mat-list-item *ngFor="let post of posts$ | async">
+    <h3 matLine> {{ post.title }} ) </h3>
+    <p matLine> {{ post.body }} ) </p>
+  </mat-list-item>
+</mat-list>

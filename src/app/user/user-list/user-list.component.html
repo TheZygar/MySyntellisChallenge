@@ -1,0 +1,13 @@
+<p>
+  User List
+</p>
+
+<mat-list>
+  <mat-list-item *ngFor="let user of users$ | async">
+    <h3 matLine> {{user.name}} ( {{user.username}} ) </h3>
+    <p matLine>
+      <a matButton href="posts/{{user.id}}"> View Posts </a>
+      <a matButton href="todos/{{user.id}}"> View Todos </a>
+    </p>
+  </mat-list-item>
+</mat-list>
