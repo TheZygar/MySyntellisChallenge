@@ -1,10 +1,11 @@
-<h1>
+<h2>
   Todo List for User {{ userId$ | async }}
-</h1>
+</h2>
 
 <mat-list>
   <mat-list-item *ngFor="let todo of todos$ | async">
-    <h3 matLine> {{ todo.title }} ) </h3>
-    
+    <div matLine>
+      <mat-checkbox [checked]="todo.completed"><h3> {{ todo.title }} </h3></mat-checkbox>
+    </div>
   </mat-list-item>
 </mat-list>

@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatCardModule } from '@angular/material/card';
 
 import { UserListComponent } from './user/user-list/user-list.component';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -25,7 +27,9 @@ import { TodoListComponent } from './user/todo-list/todo-list.component';
     HttpClientModule,
     AppRoutingModule,
     MatListModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCheckboxModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
