@@ -1,5 +1,5 @@
 <h2>
-  Todo List for User {{ userId$ | async }}
+  Todo List for {{ (selectedUser$ | async)?.name }}
 </h2>
 
 <mat-list>

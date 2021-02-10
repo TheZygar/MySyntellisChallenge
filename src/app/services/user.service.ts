@@ -2,9 +2,6 @@ import { Injectable } from '@angular/core';
 import { throwError, Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { catchError } from 'rxjs/operators';
-import * as UserActions from 'src/app/user/user.actions';
-import * as UserReducer from 'src/app/user/user.reducer';
-import { Store, select } from '@ngrx/store'
 
 @Injectable({
   providedIn: 'root'

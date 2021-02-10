@@ -8,6 +8,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
+import { StoreModule } from '@ngrx/store';
+import { userReducer } from './user/store/user.reducer';
 
 import { UserListComponent } from './user/user-list/user-list.component';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -29,7 +31,8 @@ import { TodoListComponent } from './user/todo-list/todo-list.component';
     MatListModule,
     MatButtonModule,
     MatCheckboxModule,
-    MatCardModule
+    MatCardModule,
+    StoreModule.forRoot(userReducer)
   ],
   providers: [],
   bootstrap: [AppComponent]
